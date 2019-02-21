@@ -35,5 +35,4 @@ faith of mankind. Blessed forever be His name.\
 \
 > I have gained thee with very little spiritual culture, while living
 this lowly life on earth. Now I start on my way to gain Thee in a degree
-beyond all measure [@bose-1927-LifeProtapChunder, 376-77. The second of these is an English translation from
-    Bengali. It is unclear whether Mozoomdar's monument still stands.].
+beyond all measure [@bose-1927-LifeProtapChunder, 376-77. The second of these is an English translation from Bengali. It is unclear whether Mozoomdar's monument still stands.].

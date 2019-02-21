@@ -2,9 +2,15 @@
 
 Personal Notes:
  - If book, then change 'article' to 'book' in template.tex. In that case, all of the '#' Headings will register as chapters and restart footnote numbering.
+ToDO:
+ - Fix \SingleSpace Error in Latex3
  - Troubleshoot pandoc reference.docx overwrite
+ - Create better latex template: headers, footers, "title page"
+ - fix lack of footnote formatting, ibid's, and second-instance citations.
+ - create global .tex folder and .csl folder.
 
-
+For running process.ps1:
+<!-- "~\BIN\process.ps1" -->
 ![Screenshot of title of pdf](https://i.imgur.com/2KtAfeq.png)
 
 This repository provides a bare minimum of files to generate a tidy academic
