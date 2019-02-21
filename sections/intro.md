@@ -1,19 +1,16 @@
-This is the introduction of the essay.^[It’s important to put many jokes in
-footnotes.] In this essay, in the voice of Indiana Jones, I will attempt to
-say smart things about Djuna Barnes’s 1936 novel _Nightwood_ [@nightwood].
-I’ve chosen that novel just because it’s what’s on my mind at the moment that
-I am writing this boilerplate text and have not yet decided to move ahead to
-the lorem ipsum text.
+Protap Chunder Mozoomdar (PCM) was one of the first Indians to command
+an audience in the United States of America, perhaps best-known for his
+participation in the 1893 Chicago World's Fair. A
+prominent member of the Brahmo Samaj, a Bengal-based community of Hindu
+reformers, Mozoomdar first captured the imagination of Europeans and
+Americans in 1883. At that time, his lectures across America's eastern
+seaboard (not to mention the publication of his book, *The Oriental
+Christ*) enamored liberal Christians such as Jenkin Lloyd Jones, a
+Unitarian minister who would help organize the World's Parliament of
+Religions in conjuction with the World's Fair in
+Chicago [@mullick-2010-FirstHinduMission, 95.]. PCM attended and addressed this parliament in order to rally support for the New Dispensation, a Brahmo Samaj vision of global
+religious confraternity that he hoped would mark the end of religious
+sectarianism and restore the prominence of an emotional, rather than
+intellectual, pursuit of God. 
 
-मैं इस फॉंट में लिख रहा हूँ। 
-
-You’ll notice a footnote above. In the markdown, I wrote: `^[It’s important to
-put many jokes in footnotes.]` there. Anyway, back to _Nightwood_. Looking at
-the 1995 edition of the text, edited by Cheryl J. Plumb, we note that the
-narrator refers to Guido Volkbein as “both a gourmet and a dandy, never
-appearing in public without the ribbon of some quite unknown distinction
-tinging his buttonhole with a faint thread” [@barnes_nightwood_1995 3].
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus arcu id nulla feugiat, a hendrerit massa molestie. Curabitur tincidunt nulla sed eros tempus sollicitudin. Pellentesque sit amet nunc ut ante eleifend elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur blandit odio nec nisl placerat aliquet. Nullam vel lobortis est, a rhoncus enim. Nunc eget vestibulum magna. Proin bibendum viverra pretium. Nulla euismod purus ex, vel vestibulum dui condimentum sed. Praesent semper vulputate turpis id elementum. Phasellus nec augue varius, eleifend justo id, iaculis massa. Sed ut quam ut turpis condimentum vestibulum in et neque.
-
-In est turpis, venenatis eu ultricies sed, elementum vitae enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi porta nibh mauris, at feugiat orci consectetur nec. Maecenas dapibus diam et erat convallis, ac rhoncus elit lobortis. Proin eros mi, iaculis convallis consectetur nec, fermentum sit amet orci. Morbi vitae aliquam risus. Duis enim felis, facilisis a odio eu, dapibus porttitor tortor. Integer eget odio molestie risus porta mattis nec id neque.
+Mozoomdar's narrative is generally told in order to account for nineteenth-century Indian religious responses to British colonialism. Yet his persona is often eclipsed by the dueling shadows cast by Swami Vivekananda and Keshub Chunder Sen. For both reasons, PCM has rarely been the subject of his own story. By attending to Mozoomdar's private life in the months that prefaced his addresses at the World's Parliament of Religions, based on letters he wrote to his wife Saudamini, "Mozoomdar at Sea" enables a fuller appreciation of these Chicago lectures, his hope for the New Dispensation, and the legacy of his religious mission.

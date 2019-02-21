@@ -5,5 +5,24 @@
 #
 # Please note that you should skip the “.md” extension.
 intro
-section-one
-a-long-story
+farewell-to-kolkata
+a-prolonged-departure
+the-bay-of-bengal
+colombo
+arabian-sea
+aden
+red-sea
+suez-canal
+mediterranean
+marseille
+gibraltar
+biscay
+plymouth
+london
+liverpool
+atlantic
+new-york
+niagara
+chicago
+conclusion
+afterword
