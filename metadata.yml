@@ -1,23 +1,23 @@
 ---
 # General information
-title: "My Pandoc Essay on Pantheism"
-author: 
-- name: Henry Walton Jones, Jr.
-  affiliation: Marshall College
-  email: hwjones@marshall-ct.edu
+title: "Test Document"
+author:
+- name: Nick Tackes
+  affiliation: Columbia University
+  email: jtackesiii@gmail.com
 # Bibliographic information:
 # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for details
 bibliography: bibliography.bib
 notes-after-punctuation: true
-# csl: chicago-fullnote-bibliography.csl
+csl: chicago-fullnote-bibliography.csl
 link-citations: true
 nocite: "@*"
 # Epigraph(s)
-epigraph:
-  - text: I should’ve mailed it to the Marx brothers!
-    source: Henry Walton Jones
-  - text: We have top men working on it right now.
-    source: Major Eaton
+# epigraph:
+#   - text: I should’ve mailed it to the Marx brothers!
+#     source: Henry Walton Jones
+#   - text: We have top men working on it right now.
+#     source: Major Eaton
 # Print options for the pdf.
 pdf-options:
 # The font settings are commented out by default.
@@ -26,7 +26,7 @@ pdf-options:
 # please see part IV of the Fontspec documentation, available here:
 #
 # http://mirrors.ctan.org/macros/latex/contrib/fontspec/fontspec.pdf
-  # font: EB Garamond
+  font: Murty Sanskrit
   # font-settings:
   #   historic-ligatures: true
   #   rare-ligatures: true
@@ -38,8 +38,6 @@ pdf-options:
   right-margin: 1in
   top-margin: 1in
   bottom-margin: 1in
-  # essay-header:
-  #   course-name: Arch 101
-  #   instructor-name: Prof. M. Brody
-  #   word-count: 2000
+  essay-header:
+  # Leave blank if you want a big, centered title
 ---

@@ -1,5 +1,10 @@
 # simple-essay
 
+Personal Notes:
+ - If book, then change 'article' to 'book' in template.tex. In that case, all of the '#' Headings will register as chapters and restart footnote numbering.
+ - Troubleshoot pandoc reference.docx overwrite
+
+
 ![Screenshot of title of pdf](https://i.imgur.com/2KtAfeq.png)
 
 This repository provides a bare minimum of files to generate a tidy academic
@@ -142,7 +147,7 @@ Atom that will auto-suggest citations for you.
 ## Metadata.yml
 
 The `metadata.yml` file contains information that is passed both to Pandoc
-itself and to LaTeX via the settings in `template.tex`. 
+itself and to LaTeX via the settings in `template.tex`.
 
 * `title`: This is the title of the essay or chapter.
 * `author`: This is an array of potential authors, with one listed. Each
@@ -201,5 +206,3 @@ and then set the `csl` key in `metadata.yml` to point to the file.
 8th](https://en.wikipedia.org/wiki/A_Manual_for_Writers_of_Research_Papers,_Theses,_and_Dissertations):
 
 * [`turabian-fullnote-bibliography.csl`](https://github.com/citation-style-language/styles/blob/master/turabian-fullnote-bibliography.csl)
-
-

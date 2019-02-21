@@ -57,35 +57,39 @@ $if(pdf-options.top-margin)$
 $else$
   \setulmarginsandblock{1in}{*}{*}
 $endif$
-
-%%% Header and Footer formatting
-  \nouppercaseheads
-  \makepagestyle{mystyle}
-  \makeevenhead{mystyle}{}{}{}
-  \makeoddhead{mystyle}{}{}{}
-  \makeevenfoot{mystyle}{}{}{\thepage}
-  \makeoddfoot{mystyle}{}{}{\thepage}
-
-  \makepagestyle{plain}
-  \makeevenfoot{plain}{}{}{\thepage}
-  \makeoddfoot{plain}{}{}{\thepage}
-  \makeevenhead{mystyle}{}{}{}
-  \makeoddhead{mystyle}{}{}{}
-
-\pagestyle{mystyle}
+  \setheadfoot{\baselineskip}{\baselineskip} % footer is a baseline tall.
+  \setheaderspaces{*}{6pt}{*}
 
 \checkandfixthelayout
 
-
 %%% Title layout
+$if(pdf-options.essay-header)$
   \author{$for(author)$$author.name$$sep$ \and $endfor$}
   \title{$title$}
   \renewcommand{\maketitle}{%
+    % \vspace{\droptitle}
     \par\noindent\theauthor\\
-    \today \\
+    $if(pdf-options.essay-header.course-name)$
+      $pdf-options.essay-header.course-name$ \\
+    $endif$
+    $if(pdf-options.essay-header.instructor-name)$
+      $pdf-options.essay-header.instructor-name$ \\
+    $endif$
+    $if(pdf-options.essay-header.word-count)$
+      Word count: $pdf-options.essay-header.word-count$ words \\
+    $endif$
+    % \vspace{\baselineskip}
     \begin{center}\thetitle\end{center}
     \thispagestyle{title}
    }
+$else$
+  $if(title)$
+    \title{\bigskip \bigskip $title$}
+  $endif$
+  \author{$for(author)$\Large $author.name$\\
+  \normalsize\emph{$author.affiliation$}\\
+  \url{$author.email$}\vspace*{0.2in} $sep$ \and $endfor$}
+$endif$
 
 %%% Sections
 % This removes numbering from sections by redefining \section to mimic \section*
