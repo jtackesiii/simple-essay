@@ -2,9 +2,9 @@
 # General information
 title: "Mozoomdar at Sea"
 author:
-- name: "Nick Tackes"
-  affiliation: "Columbia University"
-  email: "jtackesiii@gmail.com"
+- name: Nick Tackes
+  affiliation: Columbia University
+  email:
 # Bibliographic information:
 # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for details
 bibliography: bibliography.bib
@@ -29,10 +29,10 @@ pdf-options:
 #
 # http://mirrors.ctan.org/macros/latex/contrib/fontspec/fontspec.pdf
   font: Murty Sanskrit
-  font-settings:
-    historic-ligatures: true
-    rare-ligatures: true
-    swash-italics: true
+  # font-settings:
+  #   historic-ligatures: true
+  #   rare-ligatures: true
+  #   swash-italics: true
   double-spacing: true
   typesize: 12pt
   papersize: letter
