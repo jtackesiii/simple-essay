@@ -91,18 +91,6 @@ $else$
   \url{$author.email$}\vspace*{0.2in} $sep$ \and $endfor$}
 $endif$
 
-% Header
-$if(header)$
-\usepackage{fancyhdr}
-\pagestyle{fancy} % for fancy headers/footers
-\newcommand\datestyle{}
-\fancyhead{}
-\lfoot{}
-\cfoot{}% of \pageref{LastPage}}     % Use \thepage for counting page number
-\rfoot{\datestyle\datestyle\ $header$ \today, \thepage}
-\renewcommand{\headrulewidth}{0.0pt}
-$endif$
-
 %%% Sections
 % This removes numbering from sections by redefining \section to mimic \section*
 \let\oldsection\section

@@ -2,9 +2,9 @@
 # General information
 title: "Mozoomdar at Sea"
 author:
-- name: Nick Tackes
-  affiliation: Columbia University
-  email:
+- name: "Nick Tackes"
+  affiliation: "Columbia University"
+  email: "jtackesiii@gmail.com"
 # Bibliographic information:
 # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for details
 bibliography: bibliography.bib
@@ -13,7 +13,7 @@ csl: chicago-fullnote-bibliography.csl
 # C:\Users\jtack\Zotero\styles doesn't work
 link-citations: true
 nocite: "@*"
-header: "testestestestest"
+# header: "testestestestest"
 # Epigraph(s)
 # epigraph:
 #   - text: I should’ve mailed it to the Marx brothers!
@@ -36,10 +36,10 @@ pdf-options:
   double-spacing: true
   typesize: 12pt
   papersize: letter
-  left-margin: 1in
-  right-margin: 1in
-  top-margin: 1in
-  bottom-margin: 1in
+  left-margin: 0.5in
+  right-margin: 0.5in
+  top-margin: 0.5in
+  bottom-margin: 0.5in
   # essay-header:
   #   course-name: Arch 101
   #   instructor-name: Prof. M. Brody
