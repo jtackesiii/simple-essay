@@ -37,7 +37,6 @@ $if(pdf-options.font)$
 ]
 $endif$
 
-
 %%% PDF generation
 \usepackage[ breaklinks=true, hidelinks ]{hyperref}
 \hypersetup{%
@@ -89,6 +88,19 @@ $else$
   \author{$for(author)$\Large $author.name$\\
   \normalsize\emph{$author.affiliation$}\\
   \url{$author.email$}\vspace*{0.2in} $sep$ \and $endfor$}
+$endif$
+
+%%% Header
+$if(header)$
+\usepackage{fancyhdr}
+\pagestyle{fancy} % for fancy headers/footers
+\fancyhead{}
+\lhead{}
+\rhead{Nick Tackes \\ \today}
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage}% of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.0pt}
 $endif$
 
 %%% Sections
