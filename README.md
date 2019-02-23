@@ -1,17 +1,34 @@
 # simple-essay
 
-Personal Notes:
- - If book, then change 'article' to 'book' in template.tex. In that case, all of the '#' Headings will register as chapters and restart footnote numbering.
-ToDO:
- - Fix \SingleSpace Error in Latex3
- - Troubleshoot pandoc reference.docx overwrite
- - Create better latex template: headers, footers, "title page"
- - fix lack of footnote formatting, ibid's, and second-instance citations.
- - create global .tex folder and .csl folder.
+## Personal Notes:
 
-For running process.ps1:
-<!-- "~\BIN\process.ps1" -->
-![Screenshot of title of pdf](https://i.imgur.com/2KtAfeq.png)
+### To create new project
+
+  - Create new git repo
+
+  - Skip instantiating it with README.md
+
+  - Copy SSH key
+
+  - Clone repo to intended folder
+
+  - Copy over this project
+
+  - Change .git/config.toml origin url to [SSH key]
+
+### LaTex template format
+
+  - If book, then change 'article' to 'book' in template.tex. In that case, all of the '#' Headings will register as chapters and restart footnote numbering.
+
+  - For running process.ps1: "~\BIN\process.ps1"
+
+## ToDO:
+
+  - fix lack of footnote formatting, ibid's, and second-instance citations.
+
+  - create global .tex folder and .csl folder.
+
+## Old README excerpts
 
 This repository provides a bare minimum of files to generate a tidy academic
 paper with markdown that, nevertheless, is published as both a Microsoft Word
@@ -20,70 +37,13 @@ paper with markdown that, nevertheless, is published as both a Microsoft Word
 and
 [output.pdf](https://github.com/plain-plain-text/simple-essay/blob/master/output.pdf)
 respectively). The conversion is done by the universal document
-converter, [Pandoc](http://pandoc.org), and the typesetting for the `.pdf` is
-done with TeX.
 
-## Prerequisites
-
-Please have installed, for maximal compatibility with this README:
-
-* [Git](http://git-scm.com), for getting these files and putting your own essay under version control.
-* [Atom](http://atom.io), for editing your plain text files.
-* [Pandoc](http://pandoc.org), for converting Markdown to Word and TeX.
-* A TeX distribution, such as [MiKTeX](http://miktex.org) for Windows or [MacTeX](https://www.tug.org/mactex/) for MacOS, for typesetting your document.
-* [Zotero](http://zotero.org), for managing citations.
-* [Better BibTeX](https://retorque.re/zotero-better-bibtex/), a plugin that improves Zotero .
-
-## Getting Started
-
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this “repo”
-1. Clone your forked copy of the repo (use the “GitHub: Clone” command in
-   Atom, accessed via the [Command
-   Palette](https://atom.io/packages/command-palette)).
-
-## Understand the Repo
-
-* 📁 `sections/`: a folder containing a bunch of Markdown files that make up
-the content of your essay.
-    * `a-long-story.md`: a Markdown file
-    * `intro.md`: a Markdown file
-    * `section-one.md`: a Markdown file
-* `.gitignore`: a list of files for Git to ignore. You can also ignore this
-file.
-* `bibliography-preamble.tex`: a short TeX file that sets the formatting for
-your bibliography.
-* `bibliography.bib`: a
-[BibLaTeX](https://ctan.org/pkg/biblatex?lang=en)-formatted database of all of
-the sources you will be citing. It is an exported version of [this Zotero
-collection](https://www.zotero.org/moacir/items/collectionKey/7G84VPGE). For
-more, see below.
-* `metadata.yml`: a [YAML](https://learnxinyminutes.com/docs/yaml/) file
-containing the metadata (author, title, margins) regarding the essay. See
-below.
-* `process.ps1` and `process.sh`: PowerShell and shell scripts that convert
-your Markdown content into `.docx` and `.pdf` files.
-* `README.md`: this file.
-* `sections.txt`: a file containing a list of files from inside the `sections` folder above, in the order in which they should appear in the final document.
-* `template.tex`: the underlying TeX template for generating the pdf.
-
-## Generating Output
-
-* On MacOS and Linux, execute `sh process.sh` from within the repo root
-directory, which you can do in Atom by launching a terminal from within the
-editor.
-* On Windows, execute `.\process.ps1` from within the repo root directory,
-which you can do in Atom by launching a terminal from within the editor.
-
-These commands will create two “finished” files: `output.docx` and
-`output.pdf`. Additionally, for reference purposes, it will put a TeX file,
-`output.tex` in the `tmp` directory, which is created on the fly.
-
-## Writing Scholarly Markdown
+### Writing Scholarly Markdown
 
 The two main differences between writing regular Markdown and scholarly
 Markdown are the introduction of footnotes and citations.
 
-### Footnotes
+#### Footnotes
 
 Footnotes are written inline with the text itself. This is similar to the way
 applications like Scrivener treat footnotes. In other words, you write them
@@ -104,7 +64,7 @@ documentation for “[regular
 footnotes](https://pandoc.org/MANUAL.html#footnotes)” (those described above
 are “inline footnotes”).
 
-### Citations
+#### Citations
 
 The `.bib` database, `bibliography.bib`, is written in the
 [BibLaTeX](https://ctan.org/pkg/biblatex?lang=en). Every entry to the database
@@ -150,7 +110,7 @@ file. However, in that case, you can also benefit from using the
 [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex) plugin for
 Atom that will auto-suggest citations for you.
 
-## Metadata.yml
+### Metadata.yml
 
 The `metadata.yml` file contains information that is passed both to Pandoc
 itself and to LaTeX via the settings in `template.tex`.
@@ -188,27 +148,8 @@ be somewhat self-explanatory.
     * `font-settings`: This is a subgroup of font settings that may not apply
     to all fonts.
 
-## Citation Style Language Files
+### Citation Style Language Files
 
 A brief list of [CSL](http://citationstyles.org) files to download. Once you
 download the file, you should drop it into the same folder as this repository
 and then set the `csl` key in `metadata.yml` to point to the file.
-
-[APA 6th ed](http://www.apa.org):
-
-* [`apa.csl`](https://github.com/citation-style-language/styles/blob/master/apa.csl)
-
-[Chicago 17th ed](http://chicagomanualofstyle.org):
-
-* [`chicago-annotated-bibliography.csl`](https://github.com/citation-style-language/styles/blob/master/chicago-annotated-bibliography.csl)
-* [`chicago-fullnote-bibliography.csl`](https://github.com/citation-style-language/styles/blob/master/chicago-fullnote-bibliography.csl)
-* [`chicago-fullnote-bibliography.csl`](https://github.com/citation-style-language/styles/blob/master/chicago-fullnote-bibliography.csl)
-
-[MLA 8th ed](http://www.mla.org):
-
-* [`modern-language-association.csl`](https://github.com/citation-style-language/styles/blob/master/modern-language-association.csl)
-
-[Turabian
-8th](https://en.wikipedia.org/wiki/A_Manual_for_Writers_of_Research_Papers,_Theses,_and_Dissertations):
-
-* [`turabian-fullnote-bibliography.csl`](https://github.com/citation-style-language/styles/blob/master/turabian-fullnote-bibliography.csl)

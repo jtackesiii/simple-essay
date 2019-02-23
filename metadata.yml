@@ -1,6 +1,6 @@
 ---
 # General information
-title: "Mozoomdar at Sea"
+title: "Title"
 author:
 - name: Nick Tackes
   affiliation:
@@ -39,7 +39,7 @@ pdf-options:
   right-margin: 1in
   top-margin: 1in
   bottom-margin: 1in
-  # essay-header:
+  essay-header: true
   #   course-name: Arch 101
   #   instructor-name: Prof. M. Brody
   #   word-count: 2000
