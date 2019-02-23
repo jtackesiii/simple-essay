@@ -26,7 +26,7 @@
 
   - fix lack of footnote formatting, ibid's, and second-instance citations.
 
-  - create global .tex folder and .csl folder.
+  - create global .tex folder.
 
 ## Old README excerpts
 

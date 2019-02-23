@@ -9,7 +9,7 @@ author:
 # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for details
 bibliography: bibliography.bib
 notes-after-punctuation: true
-csl: chicago-fullnote-bibliography.csl
+csl: C:\Users\jtack\Zotero\styles\chicago-fullnote-bibliography.csl
 link-citations: true
 nocite: "@*"
 header: "Nick Tackes"
