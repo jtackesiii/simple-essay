@@ -18,15 +18,13 @@
 
 ### LaTex template format
 
-  - If book, then change 'article' to 'book' in template.tex. In that case, all of the '#' Headings will register as chapters and restart footnote numbering.
+  - If book, then change 'article' to 'book' on line 6 of "\jtack\tex-templates\template.tex". In that case, all of the '#' Headings will register as chapters and restart footnote numbering.
 
   - For running process.ps1: "~\BIN\process.ps1"
 
 ## ToDO:
 
   - fix lack of footnote formatting, ibid's, and second-instance citations.
-
-  - create global .tex folder.
 
 ## Old README excerpts
 
