@@ -24,8 +24,6 @@
 
 ## ToDO:
 
-  - fix lack of footnote formatting, ibid's, and second-instance citations.
-
 ## Old README excerpts
 
 This repository provides a bare minimum of files to generate a tidy academic

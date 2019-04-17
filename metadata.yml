@@ -7,9 +7,9 @@ author:
   email:
 # Bibliographic information:
 # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for details
-bibliography: bibliography.bib
+bibliography: C:\Users\jtack\Zotero\better-bibtex\master.bib
 notes-after-punctuation: true
-csl: C:\Users\jtack\Zotero\styles\chicago-fullnote-bibliography.csl
+csl: C:\Users\jtack\Zotero\styles\chicago-fullnote-bibliography-with-ibid.csl
 link-citations: true
 nocite: "@*"
 header: "Nick Tackes"
@@ -27,7 +27,7 @@ pdf-options:
 # please see part IV of the Fontspec documentation, available here:
 #
 # http://mirrors.ctan.org/macros/latex/contrib/fontspec/fontspec.pdf
-  font: Murty Sanskrit
+  font: Times New Roman
   # font-settings:
   #   historic-ligatures: true
   #   rare-ligatures: true
