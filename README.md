@@ -18,9 +18,8 @@
 
 ### LaTex template format
 
-  - If book, then change 'article' to 'book' on line 6 of "\jtack\tex-templates\template.tex". In that case, all of the '#' Headings will register as chapters and restart footnote numbering.
-
-  - For running process.ps1: "~\BIN\process.ps1"
+- For rendering a book: "~\BIN\book.ps1"
+- For rendering an article: "~\BIN\article.ps1"
 
 ## ToDO:
 
