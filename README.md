@@ -91,6 +91,20 @@ Blah blah [@doe99, pp. 33-35, 38-39 and *passim*].
 Blah blah [@smith04; @doe99].
 ```
 
+A minus sign (-) before the @ will suppress mention of the author in the citation. This can be useful when the author is already mentioned in the text:
+
+```markdown
+Smith says blah [-@smith04].
+```
+
+You can also write an in-text citation, as follows:
+
+```markdown
+@smith04 says blah.
+
+@smith04 [p. 33] says blah.
+```
+
 Long citation keys can be cumbersome and can be difficult to remember.
 Installing the [Better BibTeX](https://retorque.re/zotero-better-bibtex/)
 plugin for Zotero will let you define citation keys from within Zotero itself
@@ -116,8 +130,7 @@ author can have three keys, of which the latter two can be blank:
     * `name`: The author’s name
     * `affiliation`: The author’s academic affiliation
     * `email`: The author’s email
-* `bibliography`: This indicates to Pandoc where the BibLaTeX `.bib` database
-is.
+* `bibliography_X`: See multiple-bibliography
 * `notes-after-punctuation`, `csl`, `link-citations`: These are specific
 values that Pandoc-citeproc handles. Please see the [Pandoc-citeproc
 documentation](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md)
@@ -148,3 +161,41 @@ be somewhat self-explanatory.
 A brief list of [CSL](http://citationstyles.org) files to download. Once you
 download the file, you should drop it into the same folder as this repository
 and then set the `csl` key in `metadata.yml` to point to the file.
+
+### multiple-bibliographies
+
+(does not work for .docx, which reads generated bibs as "body text")
+
+This filter allows to create multiple bibliographies using
+`pandoc-citeproc`. The content of each bibliography is controlled
+via YAML values and the file in which a bibliographic entry is
+specified.
+
+#### Usage
+
+Instead of using the usual *bibliography* metadata field, all
+bibliographies must be defined via a separate field of the scheme
+*bibliographyX*, e.g.
+
+    ---
+    bibliography_main: main-bibliography.bib
+    bibliography_software: software.bib
+    ---
+
+The placement of bibliographies is controlled via special divs in bibliography.md.
+
+    # References
+
+    ::: {#refs_main}
+    :::
+
+    # Software
+
+    ::: {#refs_software}
+    :::
+
+Each refsX div should have a matching bibliographyX entry in the
+header. These divs are filled with citations from the respective
+bib-file.
+
+Finally, in the pandoc command, add "--lua-filter=/Users/jtack/AppData/Roaming/pandoc/multiple-bibliographies.lua"
