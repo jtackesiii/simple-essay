@@ -4,5 +4,5 @@
 # they are processed for the final pdf.
 #
 # Please note that you should skip the “.md” extension.
-new
-bibliography
+
+COVID-chapter

@@ -1,14 +1,15 @@
 ---
 # General information
-title: "Title"
+title: "Archetypes of Health in the Gayatri Pariwar"
 author:
 - name: Nick Tackes
   affiliation:
   email:
 # Bibliographic information:
 # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for details
-bibliography_yoga: yoga.bib
-bibliography_market: market.bib
+bibliography: C:/Users/jtack/Zotero/better-bibtex/master.bib
+bibliography_primary: yoga.bib
+bibliography_secondary: market.bib
 notes-after-punctuation: true
 csl: C:\Users\jtack\Zotero\styles\chicago-fullnote-bibliography-with-ibid.csl
 link-citations: true

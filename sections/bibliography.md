@@ -11,12 +11,12 @@
 \vspace*{-0.4in}
 \noindent
 
-Yoga
+Primary Sources
 
 ::: {#refs_yoga}
 :::
 
-Market
+Secondary Sources
 
 ::: {#refs_market}
 :::

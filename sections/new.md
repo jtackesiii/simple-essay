@@ -5,7 +5,7 @@ Section text.
 Subsection text.
 
 ### Subsubsection
-Subsection text with citation [@Jain-2018-PoliticsYogaMat]. And a second citation [@Carrette-2005-SellingSpiritualitySilent].
+Subsection text with citation [@Heelas-2008-SpiritualitiesLifeNew]. And a second citation [@Alter-2005-ModernMedicalYoga].
 
 #### Sub-sub-subsection
 Sub-sub-sub section text
