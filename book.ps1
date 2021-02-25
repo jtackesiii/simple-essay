@@ -63,7 +63,7 @@ $pandoc_tex_args = @(
     "--template=/Users/jtack/tex-templates/book.tex",
     "--filter=pandoc-citeproc",
     "--metadata-file=metadata.yml",
-    "--lua-filter=/Users/jtack/AppData/Roaming/pandoc/multiple-bibliographies.lua",
+    "--lua-filter=/Users/jtack/pandoc/multiple-bibliographies.lua",
     "--output=tmp\out.tex",
     ".\tmp\main.md"
 )
@@ -72,10 +72,10 @@ $pandoc_doc_args = @(
     "--from=markdown+yaml_metadata_block+citations",
     "--filter=pandoc-citeproc",
     "--metadata-file=metadata.yml",
-    "--lua-filter=/Users/jtack/AppData/Roaming/pandoc/multiple-bibliographies.lua",
+    "--lua-filter=/Users/jtack/pandoc/multiple-bibliographies.lua",
     "--table-of-contents",
     "--toc-depth=1",
-    "--reference-doc=/Users/jtack/AppData/Roaming/pandoc/book-reference.docx",
+    "--reference-doc=/Users/jtack/pandoc/book-reference.docx",
     "--output=_output\output.docx",
     ".\tmp\main.md"
 )
@@ -86,7 +86,7 @@ $pandoc_pdf_args = @(
     "--filter=pandoc-citeproc",
     "--pdf-engine=xelatex",
     "--metadata-file=metadata.yml",
-    "--lua-filter=/Users/jtack/AppData/Roaming/pandoc/multiple-bibliographies.lua",
+    "--lua-filter=/Users/jtack/pandoc/multiple-bibliographies.lua",
     "--output=_output\output.pdf",
     "--output=_output\output.pdf",
     ".\tmp\main.md"
